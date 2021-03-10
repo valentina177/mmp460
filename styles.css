@@ -1,4 +1,4 @@
-/*Complete this CSS file (it is already linked to the HTML page). 
+/*Complete this CSS file (it is already linked to the HTML page).
 Try to create an appealing design, keeping these principles and tips in mind:
 	1.Create a clear visual hierarchy (including styling your menu to clearly indicate what page is active).
 	2.Make sure the content doesn't feel cramped or too long (use margin, padding, width)
@@ -8,3 +8,68 @@ Try to create an appealing design, keeping these principles and tips in mind:
 You may add some Javascript, but you don't have to.
 */
 
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom, #ffffff, #ffddfd, #ffb3d3, #ff8e82, #fb8500);
+}
+
+h1,h2,p, li{
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+h1{
+  text-align: center;
+  font-size: 2.3em;
+  color: #fb8500;
+}
+
+h2{
+  color: #495057;
+}
+
+#wrapper {
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+li {
+  display: inline;
+  padding: 0 1.5em;
+}
+
+li a {
+  text-decoration: none;
+ font-size: 1em;
+ color: #818181;
+ transition: 0.3s;
+padding: 1em 1em;
+margin-right: -3em;
+}
+
+ul {
+  background-color: #F9F9F9;
+  list-style-type: none;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  border: 0.0625em solid white;
+  box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.2);
+}
+
+li a.active {
+  background-color: #fb8500;
+  padding-bottom: 2em;
+  color: white;
+
+}
+
+ li a:hover:not(.active) {
+  background-color:#ff8e82;
+  padding-bottom: 2em;
+  color: white;
+}
