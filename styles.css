@@ -7,7 +7,6 @@ Try to create an appealing design, keeping these principles and tips in mind:
 	5.Adjust your design based on the screen size (try to create a responsive menu by using @media-queries)
 You may add some Javascript, but you don't have to.
 */
-
 body {
   height: 100%;
   margin: 0;
@@ -16,18 +15,17 @@ body {
   background-image: linear-gradient(to bottom, #ffffff, #ffddfd, #ffb3d3, #ff8e82, #fb8500);
 }
 
-h1,h2,p, li{
+h1, h2, p, li {
   font-family: 'Open Sans', sans-serif;
-
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 2.3em;
   color: #fb8500;
 }
 
-h2{
+h2 {
   color: #495057;
 }
 
@@ -44,11 +42,11 @@ li {
 
 li a {
   text-decoration: none;
- font-size: 1em;
- color: #818181;
- transition: 0.3s;
-padding: 1em 1em;
-margin-right: -3em;
+  font-size: 1em;
+  color: #818181;
+  transition: 0.3s;
+  padding: 1em 1em;
+  margin-right: -3em;
 }
 
 ul {
@@ -65,11 +63,33 @@ li a.active {
   background-color: #fb8500;
   padding-bottom: 2em;
   color: white;
-
 }
 
- li a:hover:not(.active) {
-  background-color:#ff8e82;
+li a:hover:not(.active) {
+  background-color: #ff8e82;
   padding-bottom: 2em;
   color: white;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  ul {
+    padding: 0.70em;
+    text-align: center;
+  }
+
+  li a {
+    display: block;
+  }
+
+  li a.active {
+    padding-bottom: 2em;
+    margin: 0;
+  }
+
+  li a:hover:not(.active) {
+    padding-bottom: 2em;
+    margin: 0;
+  }
+}
+
+/*closing @media query*/
